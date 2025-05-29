@@ -1,0 +1,11 @@
+version: "0.1"
+services:
+  - type: web
+    name: telegram-bot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env:
+      - FROM_ENV=RENDER
+    ports:
+      - 80:80
